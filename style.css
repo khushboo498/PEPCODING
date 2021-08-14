@@ -3,6 +3,7 @@ body{
 	padding:0;
 	font-size:16px;
 	font-family: 'Heebo', sans-serif;
+    background-color: #FFFFCC;
 	/*background-image: linear-gradient(to right, rgba(254,0,0,0), rgb(250, 15, 15));*/
 }
 
@@ -32,7 +33,7 @@ p, ol, ul, li{
     left: 0;
     background-color: #000;
     opacity: 0.3;
-    animation: sub-head 2s linear ;
+    animation: sub-head 2s  ease-in-out 5s  ;
 }
 .sub-heading{
 	font-size: 36px;
@@ -56,7 +57,7 @@ p, ol, ul, li{
     left: 0;
     background: #000;
     opacity: 0.3;
-    animation: sub-head 2s linear ;
+    animation: sub-head 2s ease-in-out 5s ;
 }
 
 .heading-3{
@@ -90,10 +91,28 @@ p, ol, ul, li{
     
 }
 
+.iframe-container {
+    position: relative;
+    padding: 20% 0;
+    width: 100%;
+    margin-top: 20px;
+}
+.iframe-container iframe{
+    position: absolute;
+    width: 70%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
+}
+
+
 /*intro*/
 .intro {
 	padding: 25px 0;
-    background-color: #EDE1E9;
+   /* background-color: #EDE1E9;*/
 }
 
 .in-intro ol li {
@@ -106,37 +125,16 @@ p, ol, ul, li{
 .number-system {
     padding: 25px 0;
 }
-.in-number-system #full-video {
-    display: block;
-    text-align: center;
-    margin: 45px 0;
-}
-#full-video iframe {
-    border: none;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px 0 #8888;
-}
+
 
 
 /*base-value*/
 .base-value {
     padding: 25px 0;
-    background-color: #EDE1E9;
+  /*  background-color: #EDE1E9;*/
 }
 
-.in-base-value #first-video{
-	display: block;
-    text-align: center;
-    margin: 45px 0;
-}
 
-#first-video iframe {
-    border: none;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px 0 #8888;
-}
 
 
 /*number-system*/
@@ -154,116 +152,89 @@ p, ol, ul, li{
     position: relative;
     overflow: hidden;
     padding: 19% 0;
-    border-radius: 5px;
     margin: 20px 0;
 }
 
 .in-place-value .explain-image img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
-}
-
-.in-place-value #second-video {
-	display: block;
-    text-align: center;
-    margin: 45px 0;
-}
-#second-video iframe{
-	border: none;
-    width: 100%;
-    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
     box-shadow: 0 3px 6px 0 #8888;
 }
+
+
 /*types-of-ns*/
 .types-of-ns{
     padding: 25px 0;
-    background-color: #EDE1E9;
+    /*background-color: #EDE1E9;*/
 }
 
 .in-type .explain-image {
     position: relative;
     overflow: hidden;
-    padding: 19% 0;
+    padding: 30% 0;
     border-radius: 5px;
-    margin: 20px 0;
+/*    margin: 20px 0;*/
 }
 
 .in-type .explain-image img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
 }
 .in-type .types {
     margin: 26px 0;
 }
 
-#third-video {
-	display: block;
-    text-align: center;
-    margin: 45px 0;
-}
-#third-video iframe{
-	border: none;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px 0 #8888;
-}
-#fourth-video {
-	display: block;
-    text-align: center;
-    margin: 45px 0;
-}
-#fourth-video iframe{
-	border: none;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px 0 #8888;
-}
+
 
 /*number-conversion*/
 .number-conversion{
     padding: 25px 0;
 }
 
-.in-number-conversion #fifth-video{
-	display: block;
-    text-align: center;
-    margin: 45px 0;
-}
-#fifth-video iframe{
-	border: none;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 3px 6px 0 #8888;
-}
+
 /*algorithm*/
 .algorithm{
     padding: 25px 0;
-    background-color: #EDE1E9;
+   /* background-color: #EDE1E9;*/
 }
 .in-algorithm .explain-image {
     position: relative;
     overflow: hidden;
-    padding: 19% 0;
+    padding: 21% 0;
     border-radius: 5px;
     margin: 20px 0;
 }
 .in-algorithm .explain-image img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
+}
+.in-algorithm>ul {
+    margin-left: 30px;
 }
 
+.in-algorithm>ul li>ul {
+    margin-left: 30px;
+}
 /*mcq*/
 .mcq{
     padding: 25px 0;
@@ -277,11 +248,14 @@ p, ol, ul, li{
 }
 .in-mcq .explain-image-first img{
 	position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
 }
 
 .in-mcq .explain-image-sec{
@@ -293,11 +267,14 @@ p, ol, ul, li{
 }
 .in-mcq .explain-image-sec img{
 	position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
 }
 .in-mcq .explain-image-third{
 	position: relative;
@@ -308,11 +285,14 @@ p, ol, ul, li{
 }
 .in-mcq .explain-image-third img{
 	position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     object-fit: cover;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 #8888;
 }
 .in-mcq  .mcq-option {
     text-align: center;
